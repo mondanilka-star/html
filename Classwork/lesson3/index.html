@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
+     <style>
+        ul {
+            list-style-type: circle;
+            /* list-style-image: url("../image.png") */
+        }
+        
+        /* li::marker {
+            color:brown;
+            content: "😎"
+        } */
+        p::before {
+            content: '😴'
+        }
+        h1::after {
+
+        }
+
+        ol {
+            list-style-type: upper-latin;
+        }
+
+        .nested-list {
+            list-style-type: square;
+            color: rgb(97, 11, 106);
+        }
+        
+        div {
+            background-color: brown;
+            padding: 10px, 25px, 50px, 10px;
+            margin: 10px, 25px, 50px, 10px;
+
+        }
+     </style>
+</head>
+<body>
+
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae, maiores, nostrum blanditiis fugit accusamus, quibusdam quidem nihil cum aliquid est! Cupiditate, tempora eveniet. Possimus explicabo ut maxime consequatur iure, exercitationem error nostrum, odit sunt alias, laudantium itaque rerum. Neque, atque architecto minus repellat accusantium deserunt nobis iusto. Necessitatibus, aperiam.</div>
+
+    <ul class="nested-list">
+        <li>Програмування
+            <ul>
+                <li>Frontend</li>
+                <li>Backend</li>
+            </ul>
+        </li>
+    </ul>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>Відкрити редактор</li>
+        <li>Написати код</li>
+        <li>Закрити редактор</li>
+    </ol>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Мова опису структури веб-сторінки</dd>
+        <dt>IDE</dt>
+        <dd></dd>
+    </dl>
+
+    <div>
+        &lt;div&gt;
+        &amp;
+        &quot;
+        &nbsp;
+        &copy; &reg; &euro; &mdash; &times;
+    </div>
+    <p class="font-style">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem perferendis, error illum totam quia mollitia!</p>
+    <h1>Основи стилізації</h1>
+    <h2>Заголовок 2</h2>
+    <h3 class="bg-green color-blue">Заголовок 3</h3>
+    <h4 class="bg-green color-blue">Заголовок 4</h4>
+    <h6 id="header-styled">Заголовок 6</h6>
+    <p style="background-color: cadetblue; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iste corporis quasi rem incidunt ex eius neque, ipsa, perspiciatis similique atque perferendis! Quibusdam laudantium numquam facere labore cupiditate, ducimus repellat?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ex, commodi exercitationem nulla tempora sit. Facilis quasi adipisci, illo voluptatum sunt enim. Eveniet velit recusandae odit. Temporibus quod cumque accusantium?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam distinctio sequi obcaecati in quis maxime rerum nulla saepe eos officiis accusamus suscipit aliquam delectus aperiam, numquam omnis sit itaque. Culpa.</P>
+</body>
+</html>
