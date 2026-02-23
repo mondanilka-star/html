@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Заняття 3 - Основи стилізації</title>
     <!-- <link rel="stylesheet" href="./styles/style.css"> -->
-     <style>
-        ul {
-            list-style-type: circle;
-            /* list-style-image: url("../image.png") */
-        }
-        
+
+    <style>
         /* li::marker {
             color:brown;
-            content: "😎"
+            content: "🐱‍👤";
         } */
-        p::before {
-            content: '😴'
-        }
-        h1::after {
 
+        p::before {
+            content: '😎'
+        }
+
+        h1::after {
+            content: "👀";
+        }
+
+        ul {
+            list-style-type: circle;
+            list-style-position: inside;
+            /* list-style-image: url("icons/checklist.png"); */
         }
 
         ol {
@@ -27,36 +32,59 @@
         }
 
         .nested-list {
-            list-style-type: square;
-            color: rgb(97, 11, 106);
+            list-style-type: disc;
         }
-        
+
+        .nested-list ul {
+            list-style-type: square;
+            color: rgb(97, 111, 106);
+        }
+
         div {
             background-color: brown;
-            padding: 10px, 25px, 50px, 10px;
-            margin: 10px, 25px, 50px, 10px;
-
+            /* padding-left: 10px;
+            padding-bottom: 25px;
+            padding-right: 40px;
+            padding-top: 8px; */
+            /* top -> right -> bottom -> left */
+            /* padding: 10px 25px 50px 10px; */
+            /* top -> left and right -> bottom */
+            /* padding: 10px 30px 5px; */
+            /* top and bottom -> left and right */
+            /* padding: 20px 35px; */
+            margin: 30px 10px 45px;
+            padding: 40px;
         }
-     </style>
+    </style>
 </head>
+
 <body>
 
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vitae, maiores, nostrum blanditiis fugit accusamus, quibusdam quidem nihil cum aliquid est! Cupiditate, tempora eveniet. Possimus explicabo ut maxime consequatur iure, exercitationem error nostrum, odit sunt alias, laudantium itaque rerum. Neque, atque architecto minus repellat accusantium deserunt nobis iusto. Necessitatibus, aperiam.</div>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem numquam quae cum excepturi harum quod hic
+        aperiam tenetur fuga commodi perferendis necessitatibus aliquid tempora ipsa adipisci, quisquam atque neque in
+        ad. Maiores, reprehenderit sapiente repellat nostrum nobis facere voluptatibus sit omnis iusto incidunt
+        obcaecati animi eaque perferendis, debitis, expedita veniam!</div>
+
 
     <ul class="nested-list">
         <li>Програмування
             <ul>
-                <li>Frontend</li>
-                <li>Backend</li>
+                <li>Frontend (HTML, CSS, JS)</li>
+                <li>Backend (C#, Java, Python)</li>
             </ul>
         </li>
+        <li>Дизайн</li>
     </ul>
 
+
     <ul>
+        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est placeat nisi veritatis excepturi laudantium,
+            ipsum tempora explicabo mollitia asperiores cumque.</li>
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
     </ul>
+
     <ol>
         <li>Відкрити редактор</li>
         <li>Написати код</li>
@@ -67,8 +95,9 @@
         <dt>HTML</dt>
         <dd>Мова опису структури веб-сторінки</dd>
         <dt>IDE</dt>
-        <dd></dd>
+        <dd>Інтегроване середовище розробки</dd>
     </dl>
+
 
     <div>
         &lt;div&gt;
@@ -77,14 +106,28 @@
         &nbsp;
         &copy; &reg; &euro; &mdash; &times;
     </div>
-    <p class="font-style">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem perferendis, error illum totam quia mollitia!</p>
+
+    <p class="font-style">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio earum similique praesentium
+        illo quod autem.</p>
+
     <h1>Основи стилізації</h1>
+
     <h2>Заголовок 2</h2>
     <h3 class="bg-green color-blue">Заголовок 3</h3>
-    <h4 class="bg-green color-blue">Заголовок 4</h4>
+    <h4 class="bg-green color-blue">Загаловок 4</h4>
+
     <h6 id="header-styled">Заголовок 6</h6>
-    <p style="background-color: cadetblue; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iste corporis quasi rem incidunt ex eius neque, ipsa, perspiciatis similique atque perferendis! Quibusdam laudantium numquam facere labore cupiditate, ducimus repellat?</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ex, commodi exercitationem nulla tempora sit. Facilis quasi adipisci, illo voluptatum sunt enim. Eveniet velit recusandae odit. Temporibus quod cumque accusantium?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam distinctio sequi obcaecati in quis maxime rerum nulla saepe eos officiis accusamus suscipit aliquam delectus aperiam, numquam omnis sit itaque. Culpa.</P>
+
+    <p style="background-color: cadetblue;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 2rem;">
+    <p style="font-size: 0.9em;">Lorem ipsum dolor sit amet.</p>
+    Lorem ipsum dolor sit amet
+    consectetur, adipisicing elit. Libero dolorem voluptatum incidunt dolor repellendus
+    deserunt.</p>
+
+    <p class="bg-green color-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, minus.</p>
+
+    <p class="bg-green color-blue">Lorem ipsum dolor sit amet.</p>
 </body>
+
 </html>

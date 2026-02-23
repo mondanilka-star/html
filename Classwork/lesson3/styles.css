@@ -1,61 +1,84 @@
-        p {
-            background-color: aquamarine;
-            /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
-            font-family: 'Tangerine', ''
+/*
+        селектор {
+        property-name: property-value;
+        property-name: property-value;
+        ...
         }
-        h1 {
-            background-color: brown;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: xx-large;
-        }
-        h2, h3, h4 {
-            background-color: blanchedalmond;
-            font-family: 'Courier New', 'Courier New', Courier, monospace;
-            font-size: small;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            text-align: center
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: chocolate;
-        }
-        #header-styled {
-            background-color: darkcyan;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-        }
-        .bg-green {
-            background-color: green;
-        }
-        .color-blue {
-            color: blue;
-        }
-        .font-style {
-            /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        */
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+p {
+    background-color: aquamarine;
+    font-family: 'Tangerine', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+h1 {
+    background-color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+}
+
+h2,
+h3,
+h4 {
+    /* Груповий селектор */
+    background-color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+* {
+    /*Універсальний селектор*/
+    /* Скидання відступів за замовчуванням */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: chocolate !important; */
+    background-color: beige;
+}
+
+#header-styled {
+    text-align: center;
+    background-color: darkcyan;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.color-blue {
+    color: blue;
+}
+
+.font-style {
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 1.2em;
-            font-weight: 600;
-            font-style: italic;
+            font-weight:1000;
+            font-style:italic;
             font-variant: small-caps;
             line-height: 14px; */
-            /* { font: [style] [variant] [weight] [size/line-height] [family]} */
-            font: italic small-caps bold 1.3em/17px 'Trebuchet MS';
-            word-spacing: 0.5rem;
-            letter-spacing: 0.5rem;
-            text-transform: capitalize;
-            text-indent: 2em;
-            text-decoration: underline solid black 1px;
-            text-align: justify;
-            /* red(ff(255)) green(ff(255)) blue(ff(255))*/
-            color: #ffffff;
-            color: rgb(124, 100, 200);
-            color: transparent;
-            color: rgba(125, 100, 200, 0.5);
-            color: hsl(270, 73%, 57%);
-            
-
-            /* white-space: pre; */
-        }
-
-        @import url('https://fonts.googleapis.com');
+    /* { font: [style] [variant] [weight] [size]/[line-height] [family]; } */
+    font: small-caps bold 1.3em/17px 'Trebuchet MS';
+    word-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+    /* text-indent: 2em; */
+    text-decoration: underline dotted black 1px;
+    text-align: justify;
+    /* color:coral; */
+    /* color: #fff */
+    /* color: rgb(124, 100, 200) */
+    /* color:transparent; */
+    /* color: rgba(125, 100, 200, 0.5); */
+    color: hsl(0deg 26.71% 48.39%);
+}
