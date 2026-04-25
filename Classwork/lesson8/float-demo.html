@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+
+    <style>
+        .float-example {
+            width: 100px;
+            height: 100px;
+            border: solid black 3px;
+            background-color: cadetblue;
+            margin-right: 5px;
+
+            float: left;
+        }
+
+        img {
+            width: 90px;
+            height: 90px;
+            border-radius: 15px;
+            margin: auto;
+        }
+
+        .article {
+            border: solid black 2px;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .float-clear {
+            /* clear: both; */
+            overflow:auto;
+        }
+
+        .clearfix::before {
+            content: "";
+            clear: both;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="article float-clear">
+        <div class="float-example">
+            <img src="../../shared_recourses/plant.png" alt="plant">
+  
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo quam, fugit dolore voluptate odit repellendus possimus nisi placeat aperiam eos quibusdam minima similique laboriosam ipsa iusto architecto at et perspiciatis commodi est consequuntur quis animi. Natus, velit omnis? Voluptatibus accusamus inventore, exercitationem ut praesentium repudiandae ducimus consequatur! Itaque, autem.</p>
+    </div>
+
+    <div class="article float-clear clearfix">
+        <div class="float-clear">
+            <img src="../../shared_recourses/plant.png" alt="plant">
+        </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem perspiciatis cupiditate sit adipisci eligendi, facere tempora ducimus esse ipsum facilis quam natus, vel, laborum deleniti illo nihil quos minus at beatae debitis! Consequuntur temporibus hic cumque fugit soluta voluptas facere eveniet amet tempore porro totam in dolores, vitae magni aut est accusamus, labore praesentium numquam qui ea voluptatem! Minima, repellendus ratione, reiciendis fugit suscipit modi magnam pariatur fuga in dolores inventore ad! Possimus, nemo nesciunt doloremque obcaecati sed porro hic assumenda totam quis praesentium itaque ea, fugit tempora dolorem ducimus blanditiis eos inventore pariatur fuga. Doloribus odit incidunt dolor dignissimos aliquam repellat nemo consequuntur, debitis officia nesciunt. Aliquid corporis, aspernatur porro saepe velit similique, nisi asperiores animi praesentium non sit provident nemo soluta delectus itaque laborum. Libero, reiciendis? Totam eius repellat iusto laboriosam error suscipit, voluptatum facilis sed optio ab accusamus rem illum vitae pariatur. Aut eos autem maxime consequuntur!</p>
+    </div>
+</body>
